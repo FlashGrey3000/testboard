@@ -18,7 +18,7 @@ def test_view_user_found():
         mock_print.assert_called_once_with(("flash", "1234"))
 
 def test_view_user_not_found():
-    with patch("app.input", return_value="ghost"), patch("app.db.get_user", return_value=None), patch("app.print") as mock_print:
+    with patch("app.input", return_value="luna"), patch("app.db.get_user", return_value=None), patch("app.print") as mock_print:
 
         app.view_user()
 
